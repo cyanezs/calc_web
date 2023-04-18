@@ -34,7 +34,7 @@ $(document).ready(function() {
           result = parseFloat(oper1) / parseFloat(oper2);
           break;
         case "%":
-          result = parseFloat(oper1) % parseFloat(oper2);
+          result = (parseFloat(oper1) * parseFloat(oper2))/100;
           break;
         default:
           result = 0;
